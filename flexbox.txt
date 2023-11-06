@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Flexbox</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box red">1</div>
+        <div class="box blue">2</div>
+        <div class="box green">3</div>
+        <div class="box yellow">4</div>
+    </div>
+</body>
+</html>
+```
+
+CSS (styles.css):
+
+```css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.red {
+    background-color: #ff5733;
+    color: #fff;
+}
+
+.blue {
+    background-color: #3366ff;
+    color: #fff;
+}
+
+green {
+    background-color: #33ff57;
+    color: #fff;
+}
+
+.yellow {
+    background-color: #ffcc33;
+    color: #fff;
+}
+```
+
+Neste exemplo, criamos um layout Flexbox com quatro caixas coloridas que podem ser movimentadas horizontalmente. O Flexbox é usado para posicionar as caixas em uma linha horizontal e distribuir o espaço igualmente entre elas. Cada caixa possui uma cor de fundo e um número no centro.
+
+Você pode clicar e arrastar as caixas para movê-las na tela. Este é apenas um exemplo básico de como usar o Flexbox para criar layouts flexíveis. Você pode personalizar a aparência e o comportamento das caixas de acordo com suas necessidades.
