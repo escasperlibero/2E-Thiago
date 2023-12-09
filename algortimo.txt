@@ -1,0 +1,25 @@
+def insertion_sort(arr):
+    for i in range(1, len(arr)):
+        key = arr[i]
+        j = i - 1
+        while j >= 0 and key < arr[j]:
+            arr[j + 1] = arr[j]
+            j -= 1
+        arr[j + 1] = key
+
+def main():
+    # Tamanho do vetor
+    size = 30
+
+    # Criar um vetor de números ímpares
+    vetor = [i for i in range(1, size * 2, 2)]
+
+    print("Vetor original:", vetor)
+
+    # Chamar o algoritmo Insertion Sort
+    insertion_sort(vetor)
+
+    print("Vetor ordenado:", vetor)
+
+if __name__ == "__main__":
+    main()
